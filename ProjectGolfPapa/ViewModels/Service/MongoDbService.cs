@@ -35,7 +35,7 @@ public static class MongoDbService
         SearchCriteria.PetName => (await _petCollection.FindAsync(p => p.Name == filter)).ToList(),
         SearchCriteria.Race => (await _petCollection.FindAsync(p => p.Race == filter)).ToList(),
         SearchCriteria.Species => (await _petCollection.FindAsync(p => p.Species == filter)).ToList(),
-        SearchCriteria.Neighborhood => (await _petCollection.FindAsync(p => p.Location.Neighborhood == filter)).ToList()
+        //SearchCriteria.Neighborhood => (await _petCollection.FindAsync(p => p.Location.Neighborhood == filter)).ToList()
     };
 }
 

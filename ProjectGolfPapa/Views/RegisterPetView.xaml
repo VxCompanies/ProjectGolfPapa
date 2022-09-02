@@ -16,47 +16,66 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0"
-                   Grid.Row="0"
-                   Text="Pet Registration"/>
-        <StackPanel Grid.Column="0"
-                    Grid.Row="1">
-            <TextBlock Text="Name"/>
-            <TextBox Text="{Binding Pet.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Species"/>
-            <TextBox Text="{Binding Pet.Species, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Race"/>
-            <TextBox Text="{Binding Pet.Race, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Gender"/>
-            <StackPanel Orientation="Horizontal">
-                <RadioButton Content="Male"
-                             IsChecked="{Binding IsMale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <RadioButton Content="Female"
-                             Margin="30, 0"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0"
+                       Grid.Row="0"
+                       Text="Pet Registration"
+                       FontSize="22"
+                       Foreground="#5FA0D9"
+                       FontWeight="Bold"/>
+            <StackPanel Grid.Column="0"
+                        Grid.Row="1">
+                <TextBlock Text="Name"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding Pet.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Species"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding Pet.Species, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Race"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding Pet.Race, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Gender"
+                           Style="{StaticResource text}"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Content="Male"
+                                 IsChecked="{Binding IsMale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <RadioButton Content="Female"
+                                 Margin="30, 0"/>
+                </StackPanel>
+                <TextBlock Text="Birthdate"
+                           Style="{StaticResource text}"/>
+                <DatePicker SelectedDate="{Binding Pet.BirthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Owner's info"
+                           Style="{StaticResource text}"/>
+                <TextBlock Text="First name"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding Pet.Owner.FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Last name"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding Pet.Owner.LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Location"
+                           Style="{StaticResource text}"/>
+                <TextBlock Text="Coordinates"
+                           Style="{StaticResource text}"/>
+                <TextBlock Text="X"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Y"
+                           Style="{StaticResource text}"/>
+                <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
-            <TextBlock Text="Birthdate"/>
-            <DatePicker SelectedDate="{Binding Pet.BirthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Owner's info"/>
-            <TextBlock Text="First name"/>
-            <TextBox Text="{Binding Pet.Owner.FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Last name"/>
-            <TextBox Text="{Binding Pet.Owner.LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Location"/>
-            <TextBlock Text="Coordinates"/>
-            <TextBlock Text="X"/>
-            <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Y"/>
-            <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        </StackPanel>
-        <Button Grid.Column="0"
+            <Button Grid.Column="0"
                 Grid.Row="2"
                 Content="Register"
                 Command="{Binding RegisterPetAsyncCommand}"
                 CommandParameter="{Binding}"/>
+        </Grid>
+        <Image Grid.Column="1"
+               Source="Resources\Images\RegisterPetImage.png"/>
     </Grid>
 </UserControl>
