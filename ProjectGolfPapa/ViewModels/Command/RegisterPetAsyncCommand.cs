@@ -1,4 +1,5 @@
-﻿using ProjectGolfPapa.ViewModels.Service;
+﻿using MongoDB.Driver.GeoJsonObjectModel;
+using ProjectGolfPapa.ViewModels.Service;
 using System;
 using System.Threading.Tasks;
 
@@ -12,7 +13,8 @@ namespace ProjectGolfPapa.ViewModels.Command
 
             registerPetViewModel.Pet.Gender = registerPetViewModel.IsMale ? "Male" : "Female";
 
-            registerPetViewModel.Pet.Location.Coordinates = new decimal[2] {registerPetViewModel.X, registerPetViewModel.Y};
+           // registerPetViewModel.Pet.Location.Coordinates = new decimal[2] {registerPetViewModel.X, registerPetViewModel.Y};
+            registerPetViewModel.Pet.Location = GeoJson.Point(GeoJson.Position(registerPetViewModel.X, registerPetViewModel.Y));
 
             if (!await MongoDbService.RegisterPet(registerPetViewModel.Pet))
             {
@@ -24,7 +26,7 @@ namespace ProjectGolfPapa.ViewModels.Command
             {
                 BirthDate = DateTime.Today,
                 Owner = new(),
-                Location = new()
+                Location = new(new(0, 0))
             };
         }
 

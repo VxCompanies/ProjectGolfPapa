@@ -11,6 +11,14 @@
         <vm:PetListViewModel x:Key="vm"/>
     </UserControl.Resources>
     <Grid DataContext="{StaticResource vm}">
-            
+        <StackPanel>
+            <DataGrid ItemsSource="{Binding NearPetList}"
+                      Height="300">
+            </DataGrid>
+
+            <Button Content="Buscar"
+                Command="{Binding FindNearPetsCommand}"
+                CommandParameter="{Binding}"/>
+        </StackPanel>
     </Grid>
 </UserControl>

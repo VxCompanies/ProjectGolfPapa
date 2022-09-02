@@ -21,8 +21,8 @@ namespace ProjectGolfPapa.ViewModels
 			}
 		}
 
-		private decimal _x;
-		public decimal X
+		private double _x;
+		public double X
 		{
 			get => _x;
 			set
@@ -32,8 +32,8 @@ namespace ProjectGolfPapa.ViewModels
 			}
 		}
 
-		private decimal _y;
-		public decimal Y
+		private double _y;
+		public double Y
 		{
 			get => _y;
 			set
@@ -73,7 +73,10 @@ namespace ProjectGolfPapa.ViewModels
 			{
 				BirthDate = DateTime.Now,
 				Owner = new(),
-				Location = new()
+				//Location = new()
+				//{
+				//	Type = "Point"
+				//}
 			};
 
 			IsMale = true;

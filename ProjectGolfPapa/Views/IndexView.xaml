@@ -21,6 +21,8 @@
                          Command="{Binding NavigateHomeCommand}"/>
             <RadioButton Content="Register Pet"
                          Command="{Binding NavigateRegisterPetCommand}"/>
+            <RadioButton Content="Pet List"
+                         Command="{Binding NavigatePetListCommad}"/>
         </StackPanel>
         <ContentControl Grid.Column="1"
                         Content="{Binding CurrentIndexViewModel}">
@@ -30,6 +32,9 @@
                 </DataTemplate>
                 <DataTemplate DataType="{x:Type vm:RegisterPetViewModel}">
                     <local:RegisterPetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:PetListViewModel}">
+                    <local:PetListView/>
                 </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>

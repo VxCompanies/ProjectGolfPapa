@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using MongoDB.Bson;
 
 namespace ProjectGolfPapa.ViewModels;
 
@@ -34,13 +35,18 @@ public class PetListViewModel : ViewModelBase
 
     public ObservableCollection<SearchCriteria> SearchCriteria { get; set; }
 
+    public ObservableCollection<Pet> NearPetList { get; set; }
+
     public ObservableCollection<Pet> PetList { get; set; }
 
     public GetPetListAsyncCommand GetPetListCommand { get; set; }
 
+    public FindNearPetsCommand FindNearPetsCommand { get; set; }
+
     public PetListViewModel()
     {
         PetList = new();
+        NearPetList = new();
         SearchCriteria = new();
 
         foreach (var criteria in Enum.GetValues(typeof(SearchCriteria)).Cast<SearchCriteria>())
@@ -49,6 +55,8 @@ public class PetListViewModel : ViewModelBase
         GetPets();
 
         GetPetListCommand = new();
+
+        FindNearPetsCommand = new();
     }
 
     private async void GetPets()
