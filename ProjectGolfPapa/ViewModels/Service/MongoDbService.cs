@@ -32,13 +32,13 @@ public static class MongoDbService
 
     public static IEnumerable<Pet> GetNearPets(Pet pet)
     {
-        return _petCollection.Find(Builders<Pet>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 2000)).ToList();
+        return _petCollection.Find(Builders<Pet>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 1)).ToList();
     }
 
     public static string asd(Pet pet)
     {
-        var p = _locationCollection.Find(Builders<Sector>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 2000)).ToList();
-        return p.FirstOrDefault().neighborhood;
+        var p = _locationCollection.Find(Builders<Sector>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 1)).ToList();
+        return p.FirstOrDefault()!.neighborhood;
     }
 
     public static async Task<IEnumerable<Pet>> GetPets() => (await _petCollection.FindAsync(new BsonDocument())).ToList();

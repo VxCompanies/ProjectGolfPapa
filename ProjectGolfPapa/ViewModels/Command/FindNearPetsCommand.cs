@@ -17,6 +17,8 @@ namespace ProjectGolfPapa.ViewModels.Command
             Pet pet = new()
             {
                 Location = new(new(-69.8884, 18.5))
+                //Location = new(petVM.SelectedPet.Location.Coordinates)
+
             };
 
             foreach (var pet1 in MongoDbService.GetNearPets(pet))
