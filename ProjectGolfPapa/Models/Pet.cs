@@ -15,6 +15,5 @@ namespace ProjectGolfPapa.Models
         public Owner Owner { get; set; } = null!;
         public GeoJsonPoint<GeoJson2DCoordinates> Location { get; set; } = null!;
         public GeoJsonPoint<GeoJson2DCoordinates> Geometry { get; set; } = null!;
-        //public Location Location { get; set; } = null!;
     }
 }

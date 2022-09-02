@@ -33,9 +33,20 @@ public class PetListViewModel : ViewModelBase
         }
     }
 
+    private Pet _selectedPet;
+    public Pet SelectedPet
+    {
+        get => _selectedPet;
+        set
+        {
+            _selectedPet = value;
+            OnPropertyChanged(nameof(SelectedPet));
+        }
+    }
+
     public ObservableCollection<SearchCriteria> SearchCriteria { get; set; }
 
-    public ObservableCollection<Pet> NearPetList { get; set; }
+    public ObservableCollection<LocatedPet> NearPetList { get; set; }
 
     public ObservableCollection<Pet> PetList { get; set; }
 

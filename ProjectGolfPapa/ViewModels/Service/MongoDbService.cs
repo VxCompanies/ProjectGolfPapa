@@ -13,6 +13,9 @@ public static class MongoDbService
     private static readonly MongoClient _client = new("mongodb://localhost/27017");
     private static readonly IMongoDatabase _database = _client.GetDatabase("projectGolfPapa");
     private static readonly IMongoCollection<Pet> _petCollection = _database.GetCollection<Pet>("pets");
+    private static readonly IMongoCollection<Sector> _locationCollection = _database.GetCollection<Sector>("sectors");
+
+
 
     public static async Task<bool> RegisterPet(Pet pet)
     {
@@ -25,6 +28,17 @@ public static class MongoDbService
         {
             return false;
         }
+    }
+
+    public static IEnumerable<Pet> GetNearPets(Pet pet)
+    {
+        return _petCollection.Find(Builders<Pet>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 2000)).ToList();
+    }
+
+    public static string asd(Pet pet)
+    {
+        var p = _locationCollection.Find(Builders<Sector>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 2000)).ToList();
+        return p.FirstOrDefault().neighborhood;
     }
 
     public static async Task<IEnumerable<Pet>> GetPets() => (await _petCollection.FindAsync(new BsonDocument())).ToList();

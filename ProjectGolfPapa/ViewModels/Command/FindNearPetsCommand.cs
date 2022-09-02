@@ -20,7 +20,7 @@ namespace ProjectGolfPapa.ViewModels.Command
             };
 
             foreach (var pet1 in MongoDbService.GetNearPets(pet))
-                petVM.NearPetList.Add(pet1);
+                petVM.NearPetList.Add(new(pet1));
         }
     }
 }

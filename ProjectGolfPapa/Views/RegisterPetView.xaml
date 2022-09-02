@@ -64,10 +64,10 @@
                            Style="{StaticResource text}"/>
                 <TextBlock Text="X"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
                 <TextBlock Text="Y"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
             </StackPanel>
             <Button Grid.Column="0"
                 Grid.Row="2"

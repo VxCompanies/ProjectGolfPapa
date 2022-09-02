@@ -12,9 +12,22 @@
     </UserControl.Resources>
     <Grid DataContext="{StaticResource vm}">
         <StackPanel>
-            <DataGrid ItemsSource="{Binding NearPetList}"
+            <ListView ItemsSource="{Binding NearPetList}"
                       Height="300">
-            </DataGrid>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding Species}"/>
+                            <TextBlock Text="{Binding Race}"/>
+                            <TextBlock Text="{Binding Gender}"/>
+                            <TextBlock Text="{Binding BirthDate}"/>
+                            <TextBlock Text="{Binding Owner}"/>
+                            <TextBlock Text="{Binding Neighborhood}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Button Content="Buscar"
                 Command="{Binding FindNearPetsCommand}"
