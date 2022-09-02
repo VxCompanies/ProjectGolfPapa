@@ -10,7 +10,8 @@
     <UserControl.Resources>
         <vm:RegisterPetViewModel x:Key="vm"/>
     </UserControl.Resources>
-    <Grid DataContext="{StaticResource vm}">
+    <Grid DataContext="{StaticResource vm}"
+          Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="2*"/>
@@ -46,8 +47,11 @@
             <TextBlock Text="Last name"/>
             <TextBox Text="{Binding Pet.Owner.LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBlock Text="Location"/>
-            <TextBlock Text="Neighborhood"/>
-            <TextBox Text="{Binding Pet.Location.Neighborhood, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="Coordinates"/>
+            <TextBlock Text="X"/>
+            <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="Y"/>
+            <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
         <Button Grid.Column="0"
                 Grid.Row="2"

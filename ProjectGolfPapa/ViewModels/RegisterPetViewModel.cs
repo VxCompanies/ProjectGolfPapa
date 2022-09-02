@@ -21,6 +21,28 @@ namespace ProjectGolfPapa.ViewModels
 			}
 		}
 
+		private decimal _x;
+		public decimal X
+		{
+			get => _x;
+			set
+			{
+				_x = value;
+				OnPropertyChanged(nameof(X));
+			}
+		}
+
+		private decimal _y;
+		public decimal Y
+		{
+			get => _y;
+			set
+			{
+				_y = value;
+				OnPropertyChanged(nameof(Y));
+			}
+		}
+
 		private bool _isError;
 		public bool IsError
 		{

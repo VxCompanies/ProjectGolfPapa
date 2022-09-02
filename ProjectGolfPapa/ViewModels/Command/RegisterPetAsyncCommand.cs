@@ -12,6 +12,8 @@ namespace ProjectGolfPapa.ViewModels.Command
 
             registerPetViewModel.Pet.Gender = registerPetViewModel.IsMale ? "Male" : "Female";
 
+            registerPetViewModel.Pet.Location.Coordinates = new decimal[2] {registerPetViewModel.X, registerPetViewModel.Y};
+
             if (!await MongoDbService.RegisterPet(registerPetViewModel.Pet))
             {
                 registerPetViewModel.IsError = true;
@@ -42,7 +44,7 @@ namespace ProjectGolfPapa.ViewModels.Command
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Race))
                 return false;
 
-            if (registerPetViewModel.Pet.BirthDate >= DateTime.Today)
+            if (registerPetViewModel.Pet.BirthDate > DateTime.Today)
                 return false;
 
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Owner.FirstName))
