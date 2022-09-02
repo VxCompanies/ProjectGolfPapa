@@ -1,16 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using ProjectGolfPapa.ViewModels.Service;
 using System.Threading.Tasks;
 
 namespace ProjectGolfPapa.ViewModels.Command
 {
     public class FilterPetListAsyncCommand : AsyncCommandBase
     {
-        public override Task ExecuteAsync(object? parameter)
+        public async override Task ExecuteAsync(object? parameter)
         {
-            throw new NotImplementedException();
+            var petListViewModel = (PetListViewModel)parameter!;
+
+            petListViewModel.PetList.Clear();
+
+            switch (petListViewModel.SelectedCriteria)
+            {
+                case SearchCriteria.PetName:
+                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.PetName))
+                        petListViewModel.PetList.Add(pet);
+                    break;
+                case SearchCriteria.Race:
+                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.Race))
+                        petListViewModel.PetList.Add(pet);
+                    break;
+                case SearchCriteria.Species:
+                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.Species))
+                        petListViewModel.PetList.Add(pet);
+                    break;
+                case SearchCriteria.OwnerName:
+                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.OwnerName))
+                        petListViewModel.PetList.Add(pet);
+                    break;
+                case SearchCriteria.Neighborhood:
+                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.Neighborhood))
+                        petListViewModel.PetList.Add(pet);
+                    break;
+            }
         }
     }
 }

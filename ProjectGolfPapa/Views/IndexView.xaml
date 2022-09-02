@@ -19,14 +19,17 @@
             <RadioButton Content="Home"
                          IsChecked="True"
                          Command="{Binding NavigateHomeCommand}"/>
-            <RadioButton Content="Another Views"
-                         Command="{Binding NavigateAnotherViewCommand}"/>
+            <RadioButton Content="Register Pet"
+                         Command="{Binding NavigateRegisterPetCommand}"/>
         </StackPanel>
         <ContentControl Grid.Column="1"
                         Content="{Binding CurrentIndexViewModel}">
             <ContentControl.Resources>
                 <DataTemplate DataType="{x:Type vm:HomeViewModel}">
                     <local:HomeView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:RegisterPetViewModel}">
+                    <local:RegisterPetView/>
                 </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>

@@ -11,6 +11,8 @@ public class GetPetListAsyncCommand : AsyncCommandBase
     {
         var petList = (ObservableCollection<Pet>)parameter!;
 
+        petList.Clear();
+
         foreach (var pet in await MongoDbService.GetPets())
             petList.Add(pet);
     }

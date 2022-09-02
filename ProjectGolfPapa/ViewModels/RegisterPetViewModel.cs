@@ -32,14 +32,31 @@ namespace ProjectGolfPapa.ViewModels
 			}
 		}
 
-		public RegisterPetCommand RegisterPetCommand { get; set; }
+		private bool _isMale;
+		public bool IsMale
+		{
+			get => _isMale;
+			set
+			{
+				_isMale = value;
+				OnPropertyChanged(nameof(IsMale));
+			}
+		}
+
+		public RegisterPetAsyncCommand RegisterPetAsyncCommand { get; set; }
 
 		public RegisterPetViewModel()
 		{
-			_pet = new();
-			_isError = false;
+			Pet = new()
+			{
+				BirthDate = DateTime.Now,
+				Owner = new(),
+				Location = new()
+			};
 
-			RegisterPetCommand = new();
+			IsMale = true;
+
+            RegisterPetAsyncCommand = new();
         }
 	}
 }

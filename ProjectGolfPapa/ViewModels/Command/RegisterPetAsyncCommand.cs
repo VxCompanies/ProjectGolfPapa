@@ -1,5 +1,4 @@
-﻿using ProjectGolfPapa.Models;
-using ProjectGolfPapa.ViewModels.Service;
+﻿using ProjectGolfPapa.ViewModels.Service;
 using System;
 using System.Threading.Tasks;
 
@@ -11,13 +10,28 @@ namespace ProjectGolfPapa.ViewModels.Command
         {
             var registerPetViewModel = (RegisterPetViewModel)parameter!;
 
+            registerPetViewModel.Pet.Gender = registerPetViewModel.IsMale ? "Male" : "Female";
+
             if (!await MongoDbService.RegisterPet(registerPetViewModel.Pet))
+            {
                 registerPetViewModel.IsError = true;
+                return;
+            }
+
+            registerPetViewModel.Pet = new()
+            {
+                BirthDate = DateTime.Today,
+                Owner = new(),
+                Location = new()
+            };
         }
 
         public override bool CanExecute(object? parameter)
         {
-            var registerPetViewModel = (RegisterPetViewModel)parameter!;
+            var registerPetViewModel = (RegisterPetViewModel)parameter;
+
+            if (registerPetViewModel is null)
+                return false;
 
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Name))
                 return false;
@@ -28,10 +42,7 @@ namespace ProjectGolfPapa.ViewModels.Command
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Race))
                 return false;
 
-            if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Gender))
-                return false;
-
-            if (registerPetViewModel.Pet.BirthDate > DateTime.Today)
+            if (registerPetViewModel.Pet.BirthDate >= DateTime.Today)
                 return false;
 
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Owner.FirstName))

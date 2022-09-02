@@ -10,7 +10,7 @@ namespace ProjectGolfPapa.ViewModels.Service;
 
 public static class MongoDbService
 {
-    private static readonly MongoClient _client = new(App.mongoDbConnectionString);
+    private static readonly MongoClient _client = new("mongodb://localhost/27017");
     private static readonly IMongoDatabase _database = _client.GetDatabase("projectGolfPapa");
     private static readonly IMongoCollection<Pet> _petCollection = _database.GetCollection<Pet>("pets");
 
@@ -29,13 +29,13 @@ public static class MongoDbService
 
     public static async Task<IEnumerable<Pet>> GetPets() => (await _petCollection.FindAsync(new BsonDocument())).ToList();
 
-    public static async Task<IEnumerable<Pet>> GetPets(Pet pet, SearchCriteria searchCriteria) => searchCriteria switch
+    public static async Task<IEnumerable<Pet>> GetPets(string filter, SearchCriteria searchCriteria) => searchCriteria switch
     {
-        SearchCriteria.PetName => (await _petCollection.FindAsync(p => p.Name == pet.Name)).ToList(),
-        SearchCriteria.Race => (await _petCollection.FindAsync(p => p.Race == pet.Race)).ToList(),
-        SearchCriteria.Species => (await _petCollection.FindAsync(p => p.Species == pet.Species)).ToList(),
-        SearchCriteria.OwnerName => (await _petCollection.FindAsync(p => p.Owner.FirstName == pet.Owner.FirstName)).ToList(),
-        SearchCriteria.Neighborhood => (await _petCollection.FindAsync(p => p.Location.Neighborhood == pet.Location.Neighborhood)).ToList()
+        SearchCriteria.OwnerName => (await _petCollection.FindAsync(p => p.Owner.FirstName == filter)).ToList(),
+        SearchCriteria.PetName => (await _petCollection.FindAsync(p => p.Name == filter)).ToList(),
+        SearchCriteria.Race => (await _petCollection.FindAsync(p => p.Race == filter)).ToList(),
+        SearchCriteria.Species => (await _petCollection.FindAsync(p => p.Species == filter)).ToList(),
+        SearchCriteria.Neighborhood => (await _petCollection.FindAsync(p => p.Location.Neighborhood == filter)).ToList()
     };
 }
 
