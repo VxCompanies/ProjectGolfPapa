@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "6312742befbf03d7b0555bef"
+  },
+  "Name": "Gatointec",
+  "Race": "Bombay",
+  "Gender": "Male",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "1346558400000"
+    }
+  },
+  "Owner": {
+    "FirstName": "Nikita",
+    "LastName": "Kravchenko"
+  },
+  "Location": {
+    "type": "Point",
+    "coordinates": [
+      -69.9639204,
+      18.4871169
+    ]
+  },
+  "Geometry": null,
+  "Animal": "Cat"
+},{
+  "_id": {
+    "$oid": "63128008456746759fb4d3ee"
+  },
+  "Name": "Gatobravo",
+  "Race": "ASD",
+  "Gender": "Male",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "1662091200000"
+    }
+  },
+  "Owner": {
+    "FirstName": "Omar",
+    "LastName": "Nuñez"
+  },
+  "Location": {
+    "type": "Point",
+    "coordinates": [
+      -69.96775,
+      18.48881
+    ]
+  },
+  "Geometry": null,
+  "Animal": "Cat"
+},{
+  "_id": {
+    "$oid": "6312902340011d746295247e"
+  },
+  "Name": "Wawawa",
+  "Race": "Bulldog",
+  "Gender": "Male",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "1662091200000"
+    }
+  },
+  "Owner": {
+    "FirstName": "Pedro",
+    "LastName": "Martinez"
+  },
+  "Location": {
+    "type": "Point",
+    "coordinates": [
+      -69.927744,
+      18.47705
+    ]
+  },
+  "Geometry": null,
+  "Animal": "Dog"
+},{
+  "_id": {
+    "$oid": "63129162be7d983f1b16e2b2"
+  },
+  "Name": "Perro planti",
+  "Race": "Husky",
+  "Gender": "Male",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "1662091200000"
+    }
+  },
+  "Owner": {
+    "FirstName": "Amelia",
+    "LastName": "Infante"
+  },
+  "Location": {
+    "type": "Point",
+    "coordinates": [
+      -69.93616512,
+      18.474039
+    ]
+  },
+  "Geometry": null,
+  "Animal": "Dog"
+},{
+  "_id": {
+    "$oid": "631295aec10079c0a9a4fada"
+  },
+  "Name": "Perro Joel",
+  "Race": "Husky",
+  "Gender": "Male",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "1662091200000"
+    }
+  },
+  "Owner": {
+    "FirstName": "Joel",
+    "LastName": "JJJ"
+  },
+  "Location": {
+    "type": "Point",
+    "coordinates": [
+      -69.8989,
+      18.4718161
+    ]
+  },
+  "Geometry": null,
+  "Animal": "Dog"
+},{
+  "_id": {
+    "$oid": "6313b9852930ca0a133f584f"
+  },
+  "Name": "Milligat",
+  "Animal": "Cat",
+  "Race": "Burmilla",
+  "Gender": "Female",
+  "BirthDate": {
+    "$date": {
+      "$numberLong": "1406779200000"
+    }
+  },
+  "Owner": {
+    "FirstName": "Janna",
+    "LastName": "Beras"
+  },
+  "Location": {
+    "type": "Point",
+    "coordinates": [
+      -69.958305,
+      18.4606116
+    ]
+  },
+  "Geometry": null
+}]

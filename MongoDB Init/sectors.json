@@ -1,0 +1,150 @@
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10404", "neighborhood": "24 de Abril"}
+{"Location":{"type" : "Point", "coordinates" : [-69.8884, 18.50011]}, "zip_code": "10305", "neighborhood": "27 de Febrero"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93791, 18.44219]}, "zip_code": "10116", "neighborhood": "30 de Mayo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10305", "neighborhood": "Agua Dulce"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97588, 18.49946]}, "zip_code": "10605", "neighborhood": "Altos de Arroyo Hondo I"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10506", "neighborhood": "Altos de Arroyo Hondo II"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96546, 18.5054]}, "zip_code": "10605", "neighborhood": "Altos de Arroyo Hondo III"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93084, 18.4446]}, "zip_code": "10118", "neighborhood": "Antillas"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92302, 18.47595]}, "zip_code": "10121", "neighborhood": "Arboleda (naco)"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95057, 18.50943]}, "zip_code": "10505", "neighborhood": "Arroyo Manzano"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94089, 18.44676]}, "zip_code": "10115", "neighborhood": "Atala"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10515", "neighborhood": "Barrio Obrero"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94015, 18.45588]}, "zip_code": "10111", "neighborhood": "Bella Vista"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10213", "neighborhood": "Borojol"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10505", "neighborhood": "Buena Vista"}
+{"Location":{"type" : "Point", "coordinates" : [-69.90042, 18.47728]}, "zip_code": "10514", "neighborhood": "Cachiman"}
+{"Location":{"type" : "Point", "coordinates" : [-69.90367, 18.50498]}, "zip_code": "10407", "neighborhood": "Capotillo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94982, 18.48031]}, "zip_code": "10128", "neighborhood": "Carmelita"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10509", "neighborhood": "Carmen Amelia"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95578, 18.46963]}, "zip_code": "10133", "neighborhood": "Castellana"}
+{"Location":{"type" : "Point", "coordinates" : [-69.926, 18.44938]}, "zip_code": "10101", "neighborhood": "Centro de Los Heroes"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10122", "neighborhood": "Centro Olimpico"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93568, 18.51346]}, "zip_code": "10504", "neighborhood": "Cerros de Arroyo Hondo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97141, 18.50038]}, "zip_code": "10605", "neighborhood": "Cerros de Arroyo Hondo III"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10116", "neighborhood": "Ciudad Gandera"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9662, 18.46794]}, "zip_code": "10135", "neighborhood": "Ciudad Moderna"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89324, 18.46702]}, "zip_code": "10208", "neighborhood": "Ciudad Nueva"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91707, 18.46114]}, "zip_code": "10105", "neighborhood": "Ciudad Universitaria"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10507", "neighborhood": "Colinas de Arroyo Hondo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96918, 18.49518]}, "zip_code": "10606", "neighborhood": "Colinas del Seminario"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10601", "neighborhood": "Constelacion"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92861, 18.44506]}, "zip_code": "10118", "neighborhood": "Costa Brava"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92377, 18.50365]}, "zip_code": "10501", "neighborhood": "Cristo Rey"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95876, 18.51812]}, "zip_code": "10505", "neighborhood": "Cuesta Brava"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10507", "neighborhood": "Cuesta Hermosa"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95395, 18.44875]}, "zip_code": "10504", "neighborhood": "Cuesta Hermosa III"}
+{"Location":{"type" : "Point", "coordinates" : [-69.8791, 18.49873]}, "zip_code": "10304", "neighborhood": "Domingo Savio"}
+{"Location":{"type" : "Point", "coordinates" : [-69.90125, 18.47755]}, "zip_code": "10201", "neighborhood": "Don Bosco"}
+{"Location":{"type" : "Point", "coordinates" : [-69.98109, 18.49366]}, "zip_code": "10607", "neighborhood": "Don Honorio"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93345, 18.44311]}, "zip_code": "10118", "neighborhood": "El Cacique"}
+{"Location":{"type" : "Point", "coordinates" : [-69.85, 18.55]}, "zip_code": "10501", "neighborhood": "El Caliche"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10607", "neighborhood": "El Condado"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93451, 18.45683]}, "zip_code": "10110", "neighborhood": "El Embajador"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10411", "neighborhood": "El Ensanchito"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92935, 18.45789]}, "zip_code": "10108", "neighborhood": "El Manguito"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9595, 18.45659]}, "zip_code": "10149", "neighborhood": "El Millon"}
+{"Location":{"type" : "Point", "coordinates" : [-69.84384, 18.47739]}, "zip_code": "10508", "neighborhood": "El Pino"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94052, 18.44424]}, "zip_code": "10115", "neighborhood": "El Portal"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91558, 18.47372]}, "zip_code": "10107", "neighborhood": "El Vergel"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96546, 18.47424]}, "zip_code": "10135", "neighborhood": "Encarnacion"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10402", "neighborhood": "Ensanche Espaillat"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9059, 18.46487]}, "zip_code": "10206", "neighborhood": "Ensanche Independencia"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10513", "neighborhood": "Ensanche Kennedy"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10514", "neighborhood": "Ensanche La Fe"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9327, 18.45082]}, "zip_code": "10117", "neighborhood": "Ensanche La Paz"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89473, 18.47001]}, "zip_code": "10209", "neighborhood": "Ensanche Lugo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89697, 18.5007]}, "zip_code": "10401", "neighborhood": "Ensanche Luperon"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95057, 18.46127]}, "zip_code": "10145", "neighborhood": "Ensanche Quisqueya"}
+{"Location":{"type" : "Point", "coordinates" : [-69.98381, 18.48061]}, "zip_code": "10107", "neighborhood": "Esperilla"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95355, 18.49276]}, "zip_code": "10143", "neighborhood": "Estela Marina (los Millones)"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94163, 18.46313]}, "zip_code": "10147", "neighborhood": "Evaristo Morales"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10505", "neighborhood": "Fundacion"}
+{"Location":{"type" : "Point", "coordinates" : [-69.90441, 18.46895]}, "zip_code": "10205", "neighborhood": "Gazcue"}
+{"Location":{"type" : "Point", "coordinates" : [-69.955, 18.46126]}, "zip_code": "10204", "neighborhood": "Gazcue (plaza de La Cultura)"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10302", "neighborhood": "Guachupita"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88729, 18.51025]}, "zip_code": "10403", "neighborhood": "Gualey"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9327, 18.45082]}, "zip_code": "10117", "neighborhood": "Hoduras"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10504", "neighborhood": "Isabel Villas"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9461, 18.46787]}, "zip_code": "10130", "neighborhood": "Julieta Morales"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92675, 18.49548]}, "zip_code": "10516", "neighborhood": "La Agustina"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92675, 18.49548]}, "zip_code": "10509", "neighborhood": "La Agustinita"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10508", "neighborhood": "La Aldaba"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10410", "neighborhood": "La Caridad"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94725, 18.44875]}, "zip_code": "10607", "neighborhood": "La Ceiba"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10516", "neighborhood": "La Cementera"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10303", "neighborhood": "La Cienaga"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10502", "neighborhood": "La Cuarenta"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89188, 18.50566]}, "zip_code": "10604", "neighborhood": "La Esperanza"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92228, 18.48791]}, "zip_code": "10511", "neighborhood": "La Fe"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88468, 18.4905]}, "zip_code": "10302", "neighborhood": "La Fuente"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10503", "neighborhood": "La Isabela"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92675, 18.46149]}, "zip_code": "10109", "neighborhood": "La Julia"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10505", "neighborhood": "La Meseta"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89994, 18.46704]}, "zip_code": "10207", "neighborhood": "La Primavera"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10507", "neighborhood": "La Puya"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92898, 18.46811]}, "zip_code": "10120", "neighborhood": "La Yuca"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91111, 18.50721]}, "zip_code": "10408", "neighborhood": "La Zurza"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10516", "neighborhood": "Lanna Gautier"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94514, 18.49466]}, "zip_code": "10608", "neighborhood": "Las Colinas"}
+{"Location":{"type" : "Point", "coordinates" : [-69.99948, 18.42874]}, "zip_code": "10502", "neighborhood": "Las Flores"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91037, 18.49793]}, "zip_code": "10603", "neighborhood": "Las Villas"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97414, 18.4891]}, "zip_code": "10507", "neighborhood": "Lomas de Arroyo Hondo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10125", "neighborhood": "Lopez de Vega"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10118", "neighborhood": "Los Arrecifes"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10507", "neighborhood": "Los Arroyos"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10510", "neighborhood": "Los Caminos"}
+{"Location":{"type" : "Point", "coordinates" : [-69.8791, 18.50156]}, "zip_code": "10304", "neighborhood": "Los Guandules"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97792, 18.49278]}, "zip_code": "10607", "neighborhood": "Los Guayabos"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95206, 18.48551]}, "zip_code": "10602", "neighborhood": "Los Jardines del Norte"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95801, 18.45784]}, "zip_code": "10144", "neighborhood": "Los Millones"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94626, 18.49617]}, "zip_code": "10608", "neighborhood": "Los Pinos"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95131, 18.46914]}, "zip_code": "10130", "neighborhood": "Los Praditos"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95652, 18.47326]}, "zip_code": "10131", "neighborhood": "Los Prados"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10601", "neighborhood": "Los Proceres"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96546, 18.45724]}, "zip_code": "10137", "neighborhood": "Los Restauradores"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97141, 18.48905]}, "zip_code": "10604", "neighborhood": "Los Rios"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10106", "neighborhood": "Los Robles"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96471, 18.4522]}, "zip_code": "10138", "neighborhood": "Manganagua"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95057, 18.50943]}, "zip_code": "10505", "neighborhood": "Manzano"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88505, 18.49656]}, "zip_code": "10305", "neighborhood": "Maria Auxiliadora"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92749, 18.4552]}, "zip_code": "10102", "neighborhood": "Mata Hambre"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89101, 18.49155]}, "zip_code": "10306", "neighborhood": "Mejoramiento Social"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96322, 18.44921]}, "zip_code": "10114", "neighborhood": "Mirador Norte"}
+{"Location":{"type" : "Point", "coordinates" : [-69.90888, 18.47935]}, "zip_code": "10203", "neighborhood": "Miraflores"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92228, 18.47658]}, "zip_code": "10119", "neighborhood": "Naco"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94163, 18.48012]}, "zip_code": "10126", "neighborhood": "Paraiso"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10503", "neighborhood": "Parque Isabela"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93568, 18.46814]}, "zip_code": "10127", "neighborhood": "Piantini"}
+{"Location":{"type" : "Point", "coordinates" : [-69.92898, 18.46811]}, "zip_code": "10505", "neighborhood": "Pista de Motocros La Yuca"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97476, 18.49332]}, "zip_code": "10608", "neighborhood": "Pradera Hermosa"}
+{"Location":{"type" : "Point", "coordinates" : [-69.8992, 18.4705]}, "zip_code": "10218", "neighborhood": "Reparto Aguedita (gazcue)"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10606", "neighborhood": "Residencial La Yuca"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96769, 18.45961]}, "zip_code": "10136", "neighborhood": "Residencial Rosmil"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10115", "neighborhood": "Rocamar"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89399, 18.47772]}, "zip_code": "10217", "neighborhood": "San Carlos"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96397, 18.46982]}, "zip_code": "10134", "neighborhood": "San Geronimo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88989, 18.47408]}, "zip_code": "10211", "neighborhood": "San Lazaro"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88394, 18.49679]}, "zip_code": "10302", "neighborhood": "San Martin de Porres"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88766, 18.47596]}, "zip_code": "10212", "neighborhood": "San Miguel"}
+{"Location":{"type" : "Point", "coordinates" : [-69.95892, 18.45401]}, "zip_code": "10502", "neighborhood": "Santa Rosa"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94833, 18.45182]}, "zip_code": "10113", "neighborhood": "Sarasota"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89697, 18.5092]}, "zip_code": "10405", "neighborhood": "Simon Bolivar"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10501", "neighborhood": "Trueva"}
+{"Location":{"type" : "Point", "coordinates" : [-69.94833, 18.4759]}, "zip_code": "10129", "neighborhood": "Urbanización Fernandez"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96248, 18.46541]}, "zip_code": "10135", "neighborhood": "Urbanización Las Praderas"}
+{"Location":{"type" : "Point", "coordinates" : [-69.96784, 18.53192]}, "zip_code": "10505", "neighborhood": "Urbanización Puerta de Hierro"}
+{"Location":{"type" : "Point", "coordinates" : [-69.9461, 18.49619]}, "zip_code": "10510", "neighborhood": "Viejo Arroyo Hondo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.98258, 18.50232]}, "zip_code": "10607", "neighborhood": "Villa Claudia"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89994, 18.48687]}, "zip_code": "10309", "neighborhood": "Villa Consuelo"}
+{"Location":{"type" : "Point", "coordinates" : [-69.87417, 18.48866]}, "zip_code": "10608", "neighborhood": "Villa Elena"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88869, 18.48115]}, "zip_code": "10214", "neighborhood": "Villa Francisca"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91037, 18.4866]}, "zip_code": "10412", "neighborhood": "Villa Juana"}
+{"Location":{"type" : "Point", "coordinates" : [-69.89734, 18.48906]}, "zip_code": "10307", "neighborhood": "Villa Maria 1"}
+{"Location":{"type" : "Point", "coordinates" : [-69.97067, 18.4826]}, "zip_code": "10608", "neighborhood": "Villa Marina 2"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91037, 18.49793]}, "zip_code": "10409", "neighborhood": "Villas Agricolas 1"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91037, 18.49793]}, "zip_code": "10410", "neighborhood": "Villas Agricolas 2"}
+{"Location":{"type" : "Point", "coordinates" : [-69.93069, 18.4781]}, "zip_code": "10502", "neighborhood": "Yaquito"}
+{"Location":{"type" : "Point", "coordinates" : [-69.88654, 18.47265]}, "zip_code": "10210", "neighborhood": "Zona Colonial"}
+{"Location":{"type" : "Point", "coordinates" : [-69.91781, 18.46051]}, "zip_code": "10103", "neighborhood": "Zona Universitaria"}
+
