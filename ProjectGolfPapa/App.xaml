@@ -6,6 +6,9 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Views/Resources/Styles/TextBlock/TextStyle.xaml"/>
+                <ResourceDictionary Source="Views/Resources/Styles/TextBox/RegistrationFieldStyle.xaml"/>
+                <ResourceDictionary Source="Views/Resources/Styles/RadioButton/MenuButtonStyle.xaml"/>
+                <ResourceDictionary Source="Views/Resources/Styles/Button/RoundStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
