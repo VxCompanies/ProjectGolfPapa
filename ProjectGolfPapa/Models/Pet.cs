@@ -8,7 +8,7 @@ namespace ProjectGolfPapa.Models
     {
         public ObjectId _id { get; set; }
         public string Name { get; set; } = null!;
-        public string Species { get; set; } = null!;
+        public string Animal { get; set; } = null!;
         public string Race { get; set; } = null!;
         public string Gender { get; set; } = null!;
         public DateTime BirthDate { get; set; }

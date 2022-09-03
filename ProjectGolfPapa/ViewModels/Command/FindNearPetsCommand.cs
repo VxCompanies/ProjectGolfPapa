@@ -25,24 +25,28 @@ namespace ProjectGolfPapa.ViewModels.Command
             foreach (var pet1 in MongoDbService.GetNearPets(pet))
             {
                 if (string.IsNullOrWhiteSpace(petVM.TBSectorName)
-                        && string.IsNullOrWhiteSpace(petVM.TBRaceName))
+                        && string.IsNullOrWhiteSpace(petVM.TBAnimalName))
                     petVM.NearPetList.Add(new(pet1));
 
                 else if (string.IsNullOrWhiteSpace(petVM.TBSectorName))
                 {
-                    if (pet1.Race.ToLower() == petVM.TBRaceName.ToLower())
+                    //if (pet1.Animal.ToLower() == petVM.TBAnimalName.ToLower())
+                    //    petVM.NearPetList.Add(new(pet1));
+                    if (pet1.Animal.ToLower().Contains(petVM.TBAnimalName.ToLower()))
                         petVM.NearPetList.Add(new(pet1));
                 }
 
-                else if (string.IsNullOrWhiteSpace(petVM.TBRaceName))
+                else if (string.IsNullOrWhiteSpace(petVM.TBAnimalName))
                 {
-                    if (MongoDbService.GetPetNeighborhood(pet1).ToLower() == petVM.TBSectorName.ToLower())
+                    //if (MongoDbService.GetPetNeighborhood(pet1).ToLower() == petVM.TBSectorName.ToLower())
+                    //    petVM.NearPetList.Add(new(pet1));
+                    if (MongoDbService.GetPetNeighborhood(pet1).ToLower().Contains(petVM.TBSectorName.ToLower()))
                         petVM.NearPetList.Add(new(pet1));
                 }
                 else
                 {
                     if (MongoDbService.GetPetNeighborhood(pet1).ToLower() == petVM.TBSectorName.ToLower()
-                                && pet1.Race.ToLower() == petVM.TBRaceName.ToLower())
+                                && pet1.Animal.ToLower() == petVM.TBAnimalName.ToLower())
                         petVM.NearPetList.Add(new(pet1));
                 }
             }

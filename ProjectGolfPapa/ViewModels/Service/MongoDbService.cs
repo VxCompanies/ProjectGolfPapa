@@ -46,7 +46,7 @@ public static class MongoDbService
         SearchCriteria.OwnerName => (await _petCollection.FindAsync(p => p.Owner.FirstName == filter)).ToList(),
         SearchCriteria.PetName => (await _petCollection.FindAsync(p => p.Name == filter)).ToList(),
         SearchCriteria.Race => (await _petCollection.FindAsync(p => p.Race == filter)).ToList(),
-        SearchCriteria.Species => (await _petCollection.FindAsync(p => p.Species == filter)).ToList(),
+        SearchCriteria.Animal => (await _petCollection.FindAsync(p => p.Animal == filter)).ToList(),
         //SearchCriteria.Neighborhood => (await _petCollection.FindAsync(p => p.Location.Neighborhood == filter)).ToList()
     };
 }
@@ -55,7 +55,7 @@ public enum SearchCriteria
 {
     PetName,
     Race,
-    Species,
+    Animal,
     OwnerName,
     Neighborhood
 }

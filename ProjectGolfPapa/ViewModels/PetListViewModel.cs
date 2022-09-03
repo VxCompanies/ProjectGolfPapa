@@ -23,14 +23,14 @@ public class PetListViewModel : ViewModelBase
     }
     
 
-    private string _TBRaceName;
-    public string TBRaceName
+    private string _TBAnimalName;
+    public string TBAnimalName
     {
-        get => _TBRaceName;
+        get => _TBAnimalName;
         set
         {
-            _TBRaceName = value;
-            OnPropertyChanged(nameof(TBRaceName));
+            _TBAnimalName = value;
+            OnPropertyChanged(nameof(TBAnimalName));
         }
     }
 

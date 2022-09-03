@@ -12,7 +12,7 @@ namespace ProjectGolfPapa.Models
         public LocatedPet(Pet pet)
         {
             Name = pet.Name;
-            Species = pet.Species;
+            Animal = pet.Animal;
             Race = pet.Race;
             Gender = pet.Gender;
             BirthDate = pet.BirthDate;

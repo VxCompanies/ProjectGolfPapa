@@ -41,7 +41,7 @@ namespace ProjectGolfPapa.ViewModels.Command
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Name))
                 return false;
 
-            if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Species))
+            if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Animal))
                 return false;
 
             if (string.IsNullOrWhiteSpace(registerPetViewModel.Pet.Race))

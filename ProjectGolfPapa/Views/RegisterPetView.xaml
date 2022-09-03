@@ -34,9 +34,9 @@
                            Style="{StaticResource text}"/>
                 <TextBox Text="{Binding Pet.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                          Style="{StaticResource registrationField}"/>
-                <TextBlock Text="Species"
+                <TextBlock Text="Animal"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Pet.Species, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                <TextBox Text="{Binding Pet.Animal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                          Style="{StaticResource registrationField}"/>
                 <TextBlock Text="Race"
                            Style="{StaticResource text}"/>

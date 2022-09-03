@@ -21,8 +21,8 @@ namespace ProjectGolfPapa.ViewModels.Command
                     foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.Race))
                         petListViewModel.PetList.Add(pet);
                     break;
-                case SearchCriteria.Species:
-                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.Species))
+                case SearchCriteria.Animal:
+                    foreach (var pet in await MongoDbService.GetPets(petListViewModel.Filter, SearchCriteria.Animal))
                         petListViewModel.PetList.Add(pet);
                     break;
                 case SearchCriteria.OwnerName:
