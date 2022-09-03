@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ProjectGolfPapa.Views"
              xmlns:vm="clr-namespace:ProjectGolfPapa.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="550" d:DesignWidth="900">
     <UserControl.Resources>
         <vm:RegisterPetViewModel x:Key="vm"/>
     </UserControl.Resources>
@@ -14,9 +14,9 @@
           Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <Grid>
+        <Grid Margin="15 0 0 0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition/>
@@ -25,57 +25,80 @@
             <TextBlock Grid.Column="0"
                        Grid.Row="0"
                        Text="Pet Registration"
-                       FontSize="22"
+                       FontSize="26"
                        Foreground="#5FA0D9"
-                       FontWeight="Bold"/>
+                       FontWeight="ExtraBold"/>
             <StackPanel Grid.Column="0"
                         Grid.Row="1">
                 <TextBlock Text="Name"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Pet.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Text="{Binding Pet.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource registrationField}"/>
                 <TextBlock Text="Species"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Pet.Species, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Text="{Binding Pet.Species, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource registrationField}"/>
                 <TextBlock Text="Race"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Pet.Race, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Text="{Binding Pet.Race, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource registrationField}"/>
                 <TextBlock Text="Gender"
                            Style="{StaticResource text}"/>
                 <StackPanel Orientation="Horizontal">
                     <RadioButton Content="Male"
-                                 IsChecked="{Binding IsMale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                 IsChecked="{Binding IsMale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                 Foreground="#5FA0D9"/>
                     <RadioButton Content="Female"
-                                 Margin="30, 0"/>
+                                 Margin="30, 0"
+                                 Foreground="#5FA0D9"/>
                 </StackPanel>
                 <TextBlock Text="Birthdate"
                            Style="{StaticResource text}"/>
-                <DatePicker SelectedDate="{Binding Pet.BirthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <DatePicker SelectedDate="{Binding Pet.BirthDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Foreground="#5FA0D9"
+                            BorderThickness="0"/>
                 <TextBlock Text="Owner's info"
                            Style="{StaticResource text}"/>
-                <TextBlock Text="First name"
+                <StackPanel Margin="15 0 0 0">
+                    <TextBlock Text="First name"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Pet.Owner.FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <TextBlock Text="Last name"
+                    <TextBox Text="{Binding Pet.Owner.FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource registrationField}"/>
+                    <TextBlock Text="Last name"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Pet.Owner.LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <TextBlock Text="Location"
-                           Style="{StaticResource text}"/>
+                    <TextBox Text="{Binding Pet.Owner.LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource registrationField}"/>
+                </StackPanel>
+                <!--<TextBlock Text="Location"
+                        Style="{StaticResource text}"/>-->
                 <TextBlock Text="Coordinates"
+                        Style="{StaticResource text}"/>
+                <StackPanel Margin="15 0 0 0"
+                            Orientation="Horizontal">
+                    <StackPanel Width="50">
+                        <TextBlock Text="X"
                            Style="{StaticResource text}"/>
-                <TextBlock Text="X"
+                        <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                         Style="{StaticResource registrationField}"/>
+                    </StackPanel>
+                    <StackPanel Margin="15 0 0 0"
+                                Width="50">
+                        <TextBlock Text="Y"
                            Style="{StaticResource text}"/>
-                <TextBox Text="{Binding X, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
-                <TextBlock Text="Y"
-                           Style="{StaticResource text}"/>
-                <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
+                        <TextBox Text="{Binding Y, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                         Style="{StaticResource registrationField}"/>
+                    </StackPanel>
+                </StackPanel>
             </StackPanel>
             <Button Grid.Column="0"
-                Grid.Row="2"
-                Content="Register"
-                Command="{Binding RegisterPetAsyncCommand}"
-                CommandParameter="{Binding}"/>
+                    Grid.Row="2"
+                    Content="Register"
+                    Command="{Binding RegisterPetAsyncCommand}"
+                    CommandParameter="{Binding}"
+                    Style="{StaticResource rounded}"/>
         </Grid>
         <Image Grid.Column="1"
-               Source="Resources\Images\RegisterPetImage.png"/>
+               Source="Resources\Images\RegisterPetImage.png"
+               Margin="15 0 0 0"/>
     </Grid>
 </UserControl>

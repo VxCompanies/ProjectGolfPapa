@@ -33,8 +33,8 @@ public class PetListViewModel : ViewModelBase
         }
     }
 
-    private Pet _selectedPet;
-    public Pet SelectedPet
+    private LocatedPet _selectedPet;
+    public LocatedPet SelectedPet
     {
         get => _selectedPet;
         set
@@ -59,6 +59,7 @@ public class PetListViewModel : ViewModelBase
         PetList = new();
         NearPetList = new();
         SearchCriteria = new();
+        //SelectedPet = new();
 
         foreach (var criteria in Enum.GetValues(typeof(SearchCriteria)).Cast<SearchCriteria>())
             SearchCriteria.Add(criteria);

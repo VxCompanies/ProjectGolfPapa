@@ -13,7 +13,6 @@ namespace ProjectGolfPapa.ViewModels.Command
 
             registerPetViewModel.Pet.Gender = registerPetViewModel.IsMale ? "Male" : "Female";
 
-           // registerPetViewModel.Pet.Location.Coordinates = new decimal[2] {registerPetViewModel.X, registerPetViewModel.Y};
             registerPetViewModel.Pet.Location = GeoJson.Point(GeoJson.Position(registerPetViewModel.X, registerPetViewModel.Y));
 
             if (!await MongoDbService.RegisterPet(registerPetViewModel.Pet))
@@ -28,6 +27,8 @@ namespace ProjectGolfPapa.ViewModels.Command
                 Owner = new(),
                 Location = new(new(0, 0))
             };
+            registerPetViewModel.X = 0;
+            registerPetViewModel.Y = 0;
         }
 
         public override bool CanExecute(object? parameter)

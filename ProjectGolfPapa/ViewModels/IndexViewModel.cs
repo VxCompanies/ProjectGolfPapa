@@ -7,8 +7,6 @@ namespace ProjectGolfPapa.ViewModels
     {
         public ViewModelBase? CurrentIndexViewModel => NavigationStore.CurrentIndexViewModel;
 
-        public NavigateHomeCommand NavigateHomeCommand { get; }
-
         public NavigateRegisterPetCommand NavigateRegisterPetCommand { get; set; }
 
         public NavigatePetListCommad NavigatePetListCommad { get; set; }
@@ -17,7 +15,6 @@ namespace ProjectGolfPapa.ViewModels
         {
             NavigationStore.CurrentIndexViewModelChanged += OnCurrentIndexViewModelChanged;
 
-            NavigateHomeCommand = new();
             NavigateRegisterPetCommand = new();
             NavigatePetListCommad = new();
         }

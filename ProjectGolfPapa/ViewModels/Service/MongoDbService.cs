@@ -15,8 +15,6 @@ public static class MongoDbService
     private static readonly IMongoCollection<Pet> _petCollection = _database.GetCollection<Pet>("pets");
     private static readonly IMongoCollection<Sector> _locationCollection = _database.GetCollection<Sector>("sectors");
 
-
-
     public static async Task<bool> RegisterPet(Pet pet)
     {
         try
@@ -35,7 +33,7 @@ public static class MongoDbService
         return _petCollection.Find(Builders<Pet>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 1)).ToList();
     }
 
-    public static string asd(Pet pet)
+    public static string GetPetNeighborhood(Pet pet)
     {
         var p = _locationCollection.Find(Builders<Sector>.Filter.Near(x => x.Location, pet.Location, maxDistance: 10000, minDistance: 1)).ToList();
         return p.FirstOrDefault()!.neighborhood;

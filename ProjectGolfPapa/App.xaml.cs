@@ -10,18 +10,18 @@ namespace ProjectGolfPapa
     /// </summary>
     public partial class App : Application
     {
-        private static IConfiguration _configuration;
+        //private static IConfiguration _configuration;
 
-        public static readonly string mongoDbConnectionString = _configuration.GetConnectionString("mongoDb");
+        //public static readonly string mongoDbConnectionString = _configuration.GetConnectionString("mongoDb");
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            _configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", false)
-                .Build();
+            //_configuration = new ConfigurationBuilder()
+            //    .AddJsonFile("appsettings.json", false)
+            //    .Build();
 
             NavigationService.MainNavigate(new IndexViewModel());
-            NavigationService.IndexNavigate(new HomeViewModel());
+            NavigationService.IndexNavigate(new PetListViewModel());
 
             new MainWindow()
             {
