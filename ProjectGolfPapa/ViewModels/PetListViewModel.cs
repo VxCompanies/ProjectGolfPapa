@@ -11,6 +11,9 @@ namespace ProjectGolfPapa.ViewModels;
 
 public class PetListViewModel : ViewModelBase
 {
+
+
+
     private string _filter;
     public string Filter
     {
@@ -30,6 +33,7 @@ public class PetListViewModel : ViewModelBase
         set
         {
             _TBAnimalName = value;
+            UpdateTable();
             OnPropertyChanged(nameof(TBAnimalName));
         }
     }
@@ -41,6 +45,8 @@ public class PetListViewModel : ViewModelBase
         set
         {
             _TBSectorName = value;
+
+            UpdateTable();
             OnPropertyChanged(nameof(TBSectorName));
         }
     }
@@ -75,7 +81,6 @@ public class PetListViewModel : ViewModelBase
 
     public GetPetListAsyncCommand GetPetListCommand { get; set; }
 
-    public FindNearPetsCommand FindNearPetsCommand { get; set; }
 
     public PetListViewModel()
     {
@@ -88,15 +93,51 @@ public class PetListViewModel : ViewModelBase
             SearchCriteria.Add(criteria);
 
         GetPets();
+        UpdateTable();
 
         GetPetListCommand = new();
-
-        FindNearPetsCommand = new();
     }
 
     private async void GetPets()
     {
         foreach (var pet in await MongoDbService.GetPets())
             PetList.Add(pet);
+    }
+
+    private void UpdateTable()
+    {
+        NearPetList.Clear();
+
+        Pet pet = new();
+
+        if (SelectedPet is null) //Garantizar que sean seleccionados las mascotaas serca a santo domingo
+            pet.Location = new(new(-69.8884, 18.5));
+        else
+            pet.Location = new(pet.Location.Coordinates);
+
+        foreach (var pet1 in MongoDbService.GetNearPets(pet))
+        {
+            if (string.IsNullOrWhiteSpace(TBSectorName)
+                    && string.IsNullOrWhiteSpace(TBAnimalName))
+                NearPetList.Add(new(pet1));
+
+            else if (string.IsNullOrWhiteSpace(TBSectorName))
+            {
+                if (pet1.Animal.ToLower().Contains(TBAnimalName.ToLower()))
+                    NearPetList.Add(new(pet1));
+            }
+
+            else if (string.IsNullOrWhiteSpace(TBAnimalName))
+            {
+                if (MongoDbService.GetPetNeighborhood(pet1).ToLower().Contains(TBSectorName.ToLower()))
+                    NearPetList.Add(new(pet1));
+            }
+            else
+            {
+                if (MongoDbService.GetPetNeighborhood(pet1).ToLower() == TBSectorName.ToLower()
+                            && pet1.Animal.ToLower() == TBAnimalName.ToLower())
+                    NearPetList.Add(new(pet1));
+            }
+        }
     }
 }
