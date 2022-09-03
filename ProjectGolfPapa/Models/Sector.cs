@@ -14,5 +14,7 @@ namespace ProjectGolfPapa.Models
         public GeoJsonPoint<GeoJson2DCoordinates> Location { get; set; } = null!;
         public string zip_code { get; set; } = null!;
         public string neighborhood { get; set; } = null!;
+
+        //Esto es un prueba para hacer push 
     }
 }
