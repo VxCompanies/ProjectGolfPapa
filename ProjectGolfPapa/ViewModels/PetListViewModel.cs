@@ -21,6 +21,29 @@ public class PetListViewModel : ViewModelBase
             OnPropertyChanged(nameof(Filter));
         }
     }
+    
+
+    private string _TBRaceName;
+    public string TBRaceName
+    {
+        get => _TBRaceName;
+        set
+        {
+            _TBRaceName = value;
+            OnPropertyChanged(nameof(TBRaceName));
+        }
+    }
+
+    private string _TBSectorName;
+    public string TBSectorName
+    {
+        get => _TBSectorName;
+        set
+        {
+            _TBSectorName = value;
+            OnPropertyChanged(nameof(TBSectorName));
+        }
+    }
 
     private SearchCriteria _selectedCriteria;
     public SearchCriteria SelectedCriteria

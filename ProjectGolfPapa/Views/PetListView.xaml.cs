@@ -23,6 +23,7 @@ namespace ProjectGolfPapa.Views
         public PetListView()
         {
             InitializeComponent();
-        }
+        }        
     }
+
 }
