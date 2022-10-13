@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectGolfPapa", "ProjectGolfPapa\ProjectGolfPapa.csproj", "{54217FED-BD2B-4926-84A6-FC1CA6689702}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectGolfPapa", "ProjectGolfPapa\ProjectGolfPapa.csproj", "{54217FED-BD2B-4926-84A6-FC1CA6689702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1Unit", "TestProject1Unit\TestProject1Unit.csproj", "{FEC43163-451D-479F-91AB-0620A8814364}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{54217FED-BD2B-4926-84A6-FC1CA6689702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54217FED-BD2B-4926-84A6-FC1CA6689702}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54217FED-BD2B-4926-84A6-FC1CA6689702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC43163-451D-479F-91AB-0620A8814364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC43163-451D-479F-91AB-0620A8814364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC43163-451D-479F-91AB-0620A8814364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC43163-451D-479F-91AB-0620A8814364}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
